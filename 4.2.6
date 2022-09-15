@@ -1,0 +1,106 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyONNCIVTdvIt1ZpcV5fJAwU",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/TyapkinaPA/Lab_TyapkinaPA/blob/main/4.2.6\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 32,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aNZIliZEzWP-",
+        "outputId": "a9c3660e-3876-469d-cd7e-f5f98a943f7a"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "a=12\n",
+            "b=43\n",
+            "c=23\n",
+            "x1= -0.7\n",
+            "x2= -2.9\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Задание task_04_02_06.\n",
+        "#\n",
+        "# Выполнил: Тяпкина П.А.\n",
+        "# Группа: АДЭУ-221\n",
+        "# E-mail: p.malinka25@gmail.com\n",
+        "\n",
+        "\n",
+        "a = float(input(\"a=\"))\n",
+        "b = float(input(\"b=\"))\n",
+        "c = float(input(\"c=\"))\n",
+        "a != 0\n",
+        "# Расчет дискриминанта\n",
+        "# a * x ** 2 + b * x + c = 0\n",
+        "D = (b ** 2 - 4 * a * c) ** (1 / 2)\n",
+        "if D > 0:\n",
+        "    x1 = (- b + D) / (2 * a)\n",
+        "    x2 = (- b - D) / (2 * a) \n",
+        "    print(\"x1=\",round(x1,1))\n",
+        "    print(\"x2=\",round(x2,1))\n",
+        "elif D == 0:\n",
+        "    x = (- b) / (2 * a)\n",
+        "    print(\"x=\",round(x,1))\n",
+        "else:\n",
+        "    print(\"Нет решения\")\n",
+        "# Вывод решения в зависимости от значения дискриминанта\n",
+        "# При выводе значений оставьте 1 знак после запятой\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "# --------------\n",
+        "# Пример вывода:\n",
+        "#\n",
+        "# a = 1\n",
+        "# b = 2\n",
+        "# c = 3\n",
+        "# Решений нет\n",
+        "#\n",
+        "# a = 1\n",
+        "# b = 2\n",
+        "# c = 1\n",
+        "# x = -1.0\n",
+        "#\n",
+        "# a = 1\n",
+        "# b = 3\n",
+        "# c = -4\n",
+        "# x1 = -4.0, x2 = 1.0\n",
+        "\n",
+        "\n"
+      ]
+    }
+  ]
+}
